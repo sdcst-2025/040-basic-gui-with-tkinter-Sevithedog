@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import *
 window = tk.Tk()
+#Use sticky to minimize number of columns.
 #window.geometry("200x400")
 window.title("T-town Veterinary Clinic Database")
 yholder = tk.Label(window, text = "       ")
@@ -41,6 +42,6 @@ oEntry.grid(row = 6, column = 14)
 birthday.grid(row = 5, column = 15)
 biEntry.grid(row = 6, column = 15)
 pbutton.grid(row = 8, column = 1)
-save.grid(row = 7, column = 12, rowspan = 1)
+save.grid(row = 7, column = 12, rowspan = 1, sticky="s")
 nbutton.grid(row = 8, column = 16)
 window.mainloop()
